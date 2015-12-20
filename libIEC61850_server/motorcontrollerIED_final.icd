@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!--2015.03.10-19:42:58 Powered by Fuhua Technologies -->
+<!--2015.03.10-19:42:58 This file is generated using RedWind IED Modeler (www.iedmodeler.com)-->
+<!--2015.03.10-19:42:58 ????? RedWind IED Modeler ???? (www.iedmodeler.com)-->
+<SCL xmlns="http://www.iec.ch/61850/2003/SCL" revision="" version="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.iec.ch/61850/2003/SCL ../schema/iec61850.schema.v2.0/SCL.xsd">
+  <Header id="" nameStructure="IEDName" toolID="RedWind IED Modeler">
+    <History>
+      <Hitem revision="" version="" when=""/>
+    </History>
+  </Header>
+  <Communication>
+    <SubNetwork name="SN062d0de0">
+      <ConnectedAP apName="motorcontrollerAP" iedName="motorcontrollerIED">
+        <Address>
+          <P type="OSI-AP-Title">1 3 9999 33</P>
+          <P type="OSI-AE-Qualifier">33</P>
+          <P type="OSI-PSEL">00 00 00 01</P>
+          <P type="OSI-SSEL">00 01</P>
+          <P type="OSI-TSEL">00 01</P>
+          <P type="MMS-Port">102</P>
+          <P type="IP">192.168.62.248</P>
+          <P type="IP-SUBNET">255.255.255.0</P>
+          <P type="IP-GATEWAY">192.168.62.254</P>
+        </Address>
+      </ConnectedAP>
+    </SubNetwork>
+  </Communication>
+  <IED name="motorcontrollerIED">
+    <Services/>
+    <AccessPoint name="motorcontrollerAP">
+      <Server>
+        <Authentication/>
+        <LDevice inst="LDGenerator">
+          <LN0 desc="Logical device information" inst="" lnClass="LLN0" lnType="LLN0">
+            <DOI name="Beh">
+              <DAI name="stVal"/>
+              <DAI name="q"/>
+              <DAI name="t"/>
+            </DOI>
+            <DOI name="Health">
+              <DAI name="stVal"/>
+              <DAI name="q"/>
+              <DAI name="t"/>
+            </DOI>
+            <DOI name="Mod">
+              <DAI name="stVal"/>
+              <DAI name="q"/>
+              <DAI name="t"/>
+            </DOI>
+            <DOI name="NamPlt">
+              <DAI name="vendor"/>
+              <DAI name="swRev"/>
+              <DAI name="d"/>
+            </DOI>
+          </LN0>
+          <LN desc="Electrical power production unit outputs" inst="1" lnClass="MMXU" lnType="MMXU">
+            <DOI desc="#Behaviour" name="Beh">
+              <DAI name="stVal"/>
+              <DAI name="q"/>
+              <DAI name="t"/>
+            </DOI>
+            <DOI name="Health">
+              <DAI name="stVal"/>
+              <DAI name="q"/>
+              <DAI name="t"/>
+            </DOI>
+            <DOI desc="#Mode" name="Mod">
+              <DAI name="stVal"/>
+              <DAI name="q"/>
+              <DAI name="t"/>
+            </DOI>
+            <DOI desc="Output Power" name="TotW">
+              <SDI name="mag">
+                <DAI name="f"/>
+              </SDI>
+              <SDI name="units">
+                <DAI name="SIUnit"/>
+                <DAI name="multiplier"/>
+              </SDI>
+              <DAI name="q"/>
+              <DAI name="t"/>
+            </DOI>
+            <DOI desc="Phase to Phase Voltage" name="PPV">
+              <SDI name="phsAB">
+                <SDI name="cVal">
+                  <SDI name="mag">
+                    <DAI name="f"/>
+                  </SDI>
+                </SDI>
+                <DAI name="q"/>
+                <DAI name="t"/>
+              </SDI>
+              <SDI name="phsBC">
+                <SDI name="cVal">
+                  <SDI name="mag">
+                    <DAI name="f"/>
+                  </SDI>
+                </SDI>
+                <SDI name="units">
+                  <DAI name="SIUnit"/>
+                  <DAI name="multiplier"/>
+                </SDI>
+                <DAI name="q"/>
+                <DAI name="t"/>
+              </SDI>
+              <SDI name="phsCA">
+                <SDI name="cVal">
+                  <SDI name="mag">
+                    <DAI name="f"/>
+                  </SDI>
+                </SDI>
+                <SDI name="units">
+                  <DAI name="SIUnit"/>
+                  <DAI name="multiplier"/>
+                </SDI>
+                <DAI name="q"/>
+                <DAI name="t"/>
+              </SDI>
+            </DOI>
+            <DOI desc="Phase current" name="A">
+              <SDI name="phsA">
+                <SDI name="cVal">
+                  <SDI name="mag">
+                    <DAI name="f"/>
+                  </SDI>
+                </SDI>
+                <SDI name="units">
+                  <DAI name="SIUnit"/>
+                  <DAI name="multiplier"/>
+                </SDI>
+                <DAI name="q"/>
+                <DAI name="t"/>
+              </SDI>
+              <SDI name="phsB">
+                <SDI name="cVal">
+                  <SDI name="mag">
+                    <DAI name="f"/>
+                  </SDI>
+                </SDI>
+                <SDI name="units">
+                  <DAI name="SIUnit"/>
+                  <DAI name="multiplier"/>
+                </SDI>
+                <DAI name="q"/>
+                <DAI name="t"/>
+              </SDI>
+              <SDI name="phsC">
+                <SDI name="cVal">
+                  <SDI name="mag">
+                    <DAI name="f"/>
+                  </SDI>
+                </SDI>
+                <SDI name="units">
+                  <DAI name="SIUnit"/>
+                  <DAI name="multiplier"/>
+                </SDI>
+                <DAI name="q"/>
+                <DAI name="t"/>
+              </SDI>
+            </DOI>
+            <DOI name="NamPlt">
+              <DAI name="vendor"/>
+              <DAI name="swRev"/>
+              <DAI name="d"/>
+            </DOI>
+            <DOI desc="Average power factor" name="TotPF">
+              <SDI name="mag">
+                <DAI name="f"/>
+              </SDI>
+              <SDI name="units">
+                <DAI name="SIUnit"/>
+                <DAI name="multiplier"/>
+              </SDI>
+              <DAI name="q"/>
+              <DAI name="t"/>
+            </DOI>
+            <DOI desc="Total apparent power" name="TotVA">
+              <SDI name="mag">
+                <DAI name="f"/>
+              </SDI>
+              <SDI name="units">
+                <DAI name="SIUnit"/>
+                <DAI name="multiplier"/>
+              </SDI>
+              <DAI name="q"/>
+              <DAI name="t"/>
+            </DOI>
+            <DOI desc="Total reactive power" name="TotVAr">
+              <SDI name="mag">
+                <DAI name="f"/>
+              </SDI>
+              <SDI name="units">
+                <DAI name="SIUnit"/>
+                <DAI name="multiplier"/>
+              </SDI>
+              <DAI name="q"/>
+              <DAI name="t"/>
+            </DOI>
+          </LN>
+          <LN desc="Total output energy" inst="1" lnClass="MMTN" lnType="MMTN">
+            <DOI desc="Total output energy" name="TotWh">
+              <SDI name="units">
+                <DAI name="SIUnit"/>
+                <DAI name="multiplier"/>
+              </SDI>
+              <DAI name="actVal"/>
+              <DAI name="q"/>
+              <DAI name="t"/>
+              <DAI name="pulsQty"/>
+            </DOI>
+            <DOI desc="Total apparent energy" name="TotVAh">
+              <SDI name="units">
+                <DAI name="SIUnit"/>
+                <DAI name="multiplier"/>
+              </SDI>
+              <DAI name="actVal"/>
+              <DAI name="q"/>
+              <DAI name="t"/>
+              <DAI name="pulsQty"/>
+            </DOI>
+            <DOI desc="Total reactive energy" name="TotVArh">
+              <SDI name="units">
+                <DAI name="SIUnit"/>
+                <DAI name="multiplier"/>
+              </SDI>
+              <DAI name="actVal"/>
+              <DAI name="q"/>
+              <DAI name="t"/>
+              <DAI name="pulsQty"/>
+            </DOI>
+          </LN>
+        </LDevice>
+        <LDevice inst="LDMotorIO">
+          <LN0 inst="" lnClass="LLN0" lnType="LLN0">
+            <DOI name="Beh">
+              <DAI name="q"/>
+              <DAI name="t"/>
+              <DAI name="stVal"/>
+            </DOI>
+            <DOI name="Health">
+              <DAI name="q"/>
+              <DAI name="t"/>
+              <DAI name="stVal"/>
+            </DOI>
+            <DOI name="Mod">
+              <DAI name="q"/>
+              <DAI name="t"/>
+              <DAI name="stVal"/>
+            </DOI>
+            <DOI name="NamPlt">
+              <DAI name="vendor"/>
+              <DAI name="swRev"/>
+              <DAI name="d"/>
+            </DOI>
+          </LN0>
+          <LN desc="crankshaft's torque" inst="1" lnClass="YLTC" lnType="YLTC">
+            <DOI name="Torq">
+              <SDI name="mag">
+                <DAI name="f"/>
+              </SDI>
+              <SDI name="units">
+                <DAI name="SIUnit"/>
+                <DAI name="multiplier"/>
+              </SDI>
+              <DAI name="q"/>
+              <DAI name="t"/>
+            </DOI>
+          </LN>
+          <LN desc="Suction channel temperature" inst="1" lnClass="SIML" lnType="SIML">
+            <DOI desc="Suction channel temperature" name="TMP">
+              <SDI name="mag">
+                <DAI name="f"/>
+              </SDI>
+              <SDI name="units">
+                <DAI name="SIUnit"/>
+                <DAI name="multiplier"/>
+              </SDI>
+              <DAI name="q"/>
+              <DAI name="t"/>
+            </DOI>
+          </LN>
+          <LN desc="Coolant/going temperature" inst="2" lnClass="SIML" lnType="SIML">
+            <DOI desc="Coolant/going temperature" name="TMP">
+              <SDI name="mag">
+                <DAI name="f"/>
+              </SDI>
+              <SDI name="units">
+                <DAI name="SIUnit"/>
+                <DAI name="multiplier"/>
+              </SDI>
+              <DAI name="q"/>
+              <DAI name="t"/>
+            </DOI>
+          </LN>
+          <LN desc="Coolant/return temperature" inst="3" lnClass="SIML" lnType="SIML">
+            <DOI desc="Coolant/return temperature" name="TMP">
+              <SDI name="mag">
+                <DAI name="f"/>
+              </SDI>
+              <SDI name="units">
+                <DAI name="SIUnit"/>
+                <DAI name="multiplier"/>
+              </SDI>
+              <DAI name="q"/>
+              <DAI name="t"/>
+            </DOI>
+          </LN>
+          <LN desc="engine block temperature" inst="4" lnClass="SIML" lnType="SIML">
+            <DOI desc="engine block temperature" name="TMP">
+              <SDI name="mag">
+                <DAI name="f"/>
+              </SDI>
+              <SDI name="units">
+                <DAI name="SIUnit"/>
+                <DAI name="multiplier"/>
+              </SDI>
+              <DAI name="q"/>
+              <DAI name="t"/>
+            </DOI>
+          </LN>
+          <LN desc="exhaust channel temperature" inst="5" lnClass="SIML" lnType="SIML">
+            <DOI desc="engine block temperature" name="TMP">
+              <SDI name="mag">
+                <DAI name="f"/>
+              </SDI>
+              <SDI name="units">
+                <DAI name="SIUnit"/>
+                <DAI name="multiplier"/>
+              </SDI>
+              <DAI name="q"/>
+              <DAI name="t"/>
+            </DOI>
+          </LN>
+          <LN desc="lubricant (oil) temperature" inst="6" lnClass="SIML" lnType="SIML">
+            <DOI desc="lubricant (oil) temperature" name="TMP">
+              <SDI name="mag">
+                <DAI name="f"/>
+              </SDI>
+              <SDI name="units">
+                <DAI name="SIUnit"/>
+                <DAI name="multiplier"/>
+              </SDI>
+              <DAI name="q"/>
+              <DAI name="t"/>
+            </DOI>
+          </LN>
+          <LN desc="minimum level of fuel tank" inst="1" lnClass="SIMG" lnType="SIMG">
+            <DOI desc="minimum level of fuel tank" name="InsLevMin">
+              <DAI name="stVal"/>
+              <DAI name="q"/>
+              <DAI name="t"/>
+            </DOI>
+          </LN>
+          <LN desc="motor start/stop" inst="1" lnClass="LPHD" lnType="LPHD">
+            <DOI desc="motor stop" name="PwrDn">
+              <DAI name="stVal"/>
+              <DAI name="q"/>
+              <DAI name="t"/>
+            </DOI>
+            <DOI desc="motor start" name="PwrUp">
+              <DAI name="stVal"/>
+              <DAI name="q"/>
+              <DAI name="t"/>
+            </DOI>
+          </LN>
+          <LN desc="12v charge ok" inst="1" lnClass="GGIO" lnType="GGIO">
+            <DOI desc="12v charge ok" name="Alm1">
+              <DAI name="stVal"/>
+              <DAI name="q"/>
+              <DAI name="t"/>
+            </DOI>
+          </LN>
+          <LN desc="oilpressure ok" inst="2" lnClass="GGIO" lnType="GGIO">
+            <DOI desc="oilpressure ok" name="Alm1">
+              <DAI name="stVal"/>
+              <DAI name="q"/>
+              <DAI name="t"/>
+            </DOI>
+          </LN>
+          <LN desc="emergency stop" inst="3" lnClass="GGIO" lnType="GGIO">
+            <DOI desc="emergency stop" name="Alm1">
+              <DAI name="stVal"/>
+              <DAI name="q"/>
+              <DAI name="t"/>
+            </DOI>
+          </LN>
+          <LN desc="turn on annealing" inst="4" lnClass="GGIO" lnType="GGIO">
+            <DOI accessControl="" desc="turn on annealing" name="Alm1">
+              <DAI name="stVal"/>
+              <DAI name="q"/>
+              <DAI name="t"/>
+            </DOI>
+          </LN>
+          <LN desc="crankshaft RPM" inst="1" lnClass="TRTN" lnType="TRTN">
+            <DOI desc="crankshaft RPM" name="RotSpdSv">
+              <SDI name="instMag">
+                <DAI name="f"/>
+              </SDI>
+              <SDI name="units">
+                <DAI name="SIUnit"/>
+                <DAI name="multiplier"/>
+              </SDI>
+              <DAI name="q"/>
+              <DAI name="t"/>
+            </DOI>
+          </LN>
+          <LN desc="Fuel/going flow" inst="1" lnClass="TFLW" lnType="TFLW">
+            <DOI desc="Fuel/going flow" name="FlwSv">
+              <SDI name="instMag">
+                <DAI name="f"/>
+              </SDI>
+              <SDI name="units">
+                <DAI name="SIUnit"/>
+                <DAI name="multiplier"/>
+              </SDI>
+              <DAI name="q"/>
+              <DAI name="t"/>
+            </DOI>
+          </LN>
+          <LN desc="Fuel/return flow" inst="2" lnClass="TFLW" lnType="TFLW">
+            <DOI desc="Fuel/return flow" name="FlwSv">
+              <SDI name="instMag">
+                <DAI name="f"/>
+              </SDI>
+              <SDI name="units">
+                <DAI name="SIUnit"/>
+                <DAI name="multiplier"/>
+              </SDI>
+              <DAI name="q"/>
+              <DAI name="t"/>
+            </DOI>
+          </LN>
+          <LN desc="suction channel flow" inst="3" lnClass="TFLW" lnType="TFLW">
+            <DOI name="FlwSv">
+              <SDI name="instMag">
+                <DAI name="f"/>
+              </SDI>
+              <SDI name="units">
+                <DAI name="SIUnit"/>
+              </SDI>
+              <DAI name="q"/>
+              <DAI name="t"/>
+            </DOI>
+          </LN>
+        </LDevice>
+      </Server>
+    </AccessPoint>
+  </IED>
+  <DataTypeTemplates>
+    <LNodeType desc="Logical device information" id="LLN0" lnClass="LLN0">
+      <DO name="Beh" type="ENS"/>
+      <DO name="Health" type="ENS"/>
+      <DO name="Mod" type="ENC"/>
+      <DO name="NamPlt" type="LPL"/>
+    </LNodeType>
+    <LNodeType desc="" id="MMXU" lnClass="MMXU">
+      <DO name="TotW" type="MV"/>
+      <DO name="PPV" type="DEL"/>
+      <DO name="A" type="WYE"/>
+      <DO name="Beh" type="INS"/>
+      <DO name="Health" type="INS"/>
+      <DO name="Mod" type="INC"/>
+      <DO name="NamPlt" type="LPL"/>
+      <DO name="TotVA" type="MV"/>
+      <DO name="TotVAr" type="MV"/>
+      <DO name="TotPF" type="MV"/>
+    </LNodeType>
+    <LNodeType desc="" id="YLTC" lnClass="YLTC">
+      <DO desc="crankshaft torque" name="Torq" type="MV"/>
+      <DO name="EndPosR" type="SPS"/>
+      <DO name="EndPosL" type="SPS"/>
+      <DO name="Beh" type="INS"/>
+      <DO name="Mod" type="INC"/>
+      <DO name="NamPlt" type="LPL"/>
+      <DO name="Health" type="INS"/>
+    </LNodeType>
+    <LNodeType desc="" id="SIML" lnClass="SIML">
+      <DO name="TMP" type="MV"/>
+      <DO name="InsAlm" type="SPS"/>
+      <DO name="Beh" type="INS"/>
+      <DO name="Mod" type="INC"/>
+      <DO name="Health" type="INS"/>
+      <DO name="NamPlt" type="LPL"/>
+    </LNodeType>
+    <LNodeType desc="" id="TRTN" lnClass="TRTN">
+      <DO name="RotSpdSv" type="SAV"/>
+      <DO name="Beh" type="ENS"/>
+    </LNodeType>
+    <LNodeType desc="" id="SIMG" lnClass="SIMG">
+      <DO name="InsAlm" type="SPS"/>
+      <DO name="InsLevMin" type="SPS"/>
+      <DO name="Beh" type="INS"/>
+      <DO name="NamPlt" type="LPL"/>
+    </LNodeType>
+    <LNodeType desc="" id="LPHD" lnClass="LPHD">
+      <DO name="Proxy" type="SPS"/>
+      <DO name="PwrUp" type="SPS"/>
+      <DO name="PwrDn" type="SPS"/>
+      <DO name="PhyHealth" type="ENS"/>
+      <DO name="PhyNam" type="DPL"/>
+    </LNodeType>
+    <LNodeType id="GGIO" lnClass="GGIO">
+      <DO name="Alm1" type="SPS"/>
+      <DO name="Beh" type="ENS"/>
+    </LNodeType>
+    <LNodeType id="TFLW" lnClass="TFLW">
+      <DO name="FlwSv" type="SAV"/>
+      <DO name="Beh" type="ENS"/>
+    </LNodeType>
+    <LNodeType id="MMTN" lnClass="MMTN">
+      <DO name="Beh" type="ENS"/>
+      <DO name="TotVAh" type="BCR"/>
+      <DO name="TotWh" type="BCR"/>
+      <DO name="TotVArh" type="BCR"/>
+    </LNodeType>
+    <DOType cdc="SPS" desc="Single point status" id="SPS">
+      <DA bType="BOOLEAN" dchg="true" fc="ST" name="stVal"/>
+      <DA bType="Quality" fc="ST" name="q" qchg="true"/>
+      <DA bType="Timestamp" fc="ST" name="t"/>
+    </DOType>
+    <DOType cdc="MV" desc="#Measured value" id="MV">
+      <DA bType="Struct" dchg="true" fc="MX" name="mag" type="AnalogueValue"/>
+      <DA bType="Quality" fc="MX" name="q" qchg="true"/>
+      <DA bType="Timestamp" fc="MX" name="t"/>
+      <DA bType="Struct" fc="CF" name="units" type="Unit"/>
+    </DOType>
+    <DOType cdc="DEL" desc="Delta" id="DEL">
+      <SDO name="phsAB" type="CMV"/>
+      <SDO name="phsBC" type="CMV"/>
+      <SDO name="phsCA" type="CMV"/>
+    </DOType>
+    <DOType cdc="SAV" desc="Sampled value" id="SAV">
+      <DA bType="Struct" fc="MX" name="instMag" type="AnalogueValue"/>
+      <DA bType="Quality" fc="MX" name="q" qchg="true"/>
+      <DA bType="Timestamp" fc="MX" name="t"/>
+      <DA bType="Struct" fc="CF" name="units" type="Unit"/>
+    </DOType>
+    <DOType cdc="BCR" id="BCR">
+      <DA bType="INT64" dchg="true" fc="ST" name="actVal"/>
+      <DA bType="Quality" fc="ST" name="q" qchg="true"/>
+      <DA bType="Timestamp" fc="ST" name="t"/>
+      <DA bType="Struct" dchg="true" fc="CF" name="units" type="Unit"/>
+      <DA bType="FLOAT32" fc="CF" name="pulsQty"/>
+    </DOType>
+    <DOType cdc="WYE" id="WYE">
+      <SDO name="phsA" type="CMV"/>
+      <SDO name="phsB" type="CMV"/>
+      <SDO name="phsC" type="CMV"/>
+    </DOType>
+    <DOType cdc="CMV" id="CMV">
+      <DA bType="Struct" dchg="true" fc="MX" name="cVal" type="Vector"/>
+      <DA bType="Quality" fc="MX" name="q" qchg="true"/>
+      <DA bType="Timestamp" fc="MX" name="t"/>
+      <DA bType="Struct" fc="CF" name="units" type="Unit"/>
+    </DOType>
+    <DOType cdc="INS" id="INS">
+      <DA bType="INT32" dchg="true" fc="ST" name="stVal"/>
+      <DA bType="Quality" fc="ST" name="q" qchg="true"/>
+      <DA bType="Timestamp" fc="ST" name="t"/>
+    </DOType>
+    <DOType cdc="INC" id="INC">
+      <DA bType="INT32" dchg="true" fc="ST" name="stVal"/>
+      <DA bType="Quality" fc="ST" name="q" qchg="true"/>
+      <DA bType="Timestamp" fc="ST" name="t"/>
+    </DOType>
+    <DOType cdc="ENS" id="ENS">
+      <DA bType="Quality" fc="ST" name="q"/>
+      <DA bType="Timestamp" fc="ST" name="t"/>
+      <DA bType="Enum" fc="ST" name="stVal" type="tempEnum"/>
+    </DOType>
+    <DOType cdc="ENC" id="ENC">
+      <DA bType="Quality" fc="ST" name="q" qchg="true"/>
+      <DA bType="Timestamp" fc="ST" name="t"/>
+      <DA bType="Enum" dchg="true" fc="ST" name="stVal" type="tempEnum"/>
+    </DOType>
+    <DOType cdc="LPL" id="LPL">
+      <DA bType="VisString255" fc="DC" name="vendor"/>
+      <DA bType="VisString255" fc="DC" name="swRev"/>
+      <DA bType="VisString255" fc="DC" name="d"/>
+    </DOType>
+    <DOType cdc="DPL" id="DPL">
+      <DA bType="VisString255" fc="DC" name="vendor"/>
+    </DOType>
+    <DAType id="AnalogueValue">
+      <BDA bType="FLOAT32" name="f"/>
+    </DAType>
+    <DAType id="Vector">
+      <BDA bType="Struct" name="mag" type="AnalogueValue"/>
+    </DAType>
+    <DAType id="Unit">
+      <BDA bType="Enum" name="SIUnit" type="SIUnit"/>
+      <BDA bType="Enum" name="multiplier" type="multiplier"/>
+    </DAType>
+    <EnumType id="SIUnit">
+      <EnumVal ord="1">none</EnumVal>
+      <EnumVal ord="4">s</EnumVal>
+      <EnumVal ord="5">A</EnumVal>
+      <EnumVal ord="23">°C</EnumVal>
+      <EnumVal ord="29">V</EnumVal>
+      <EnumVal ord="33">Hz</EnumVal>
+      <EnumVal ord="38">W</EnumVal>
+      <EnumVal ord="72">Wh</EnumVal>
+      <EnumVal ord="31">Nm</EnumVal>
+      <EnumVal ord="53">1/s</EnumVal>
+      <EnumVal ord="45">m³/s</EnumVal>
+    </EnumType>
+    <EnumType id="multiplier">
+      <EnumVal ord="-24">Yocto</EnumVal>
+      <EnumVal ord="-21">Zepto</EnumVal>
+      <EnumVal ord="-18">Atto</EnumVal>
+      <EnumVal ord="-15">Femto</EnumVal>
+      <EnumVal ord="-12">Pico</EnumVal>
+      <EnumVal ord="-9">Nano</EnumVal>
+      <EnumVal ord="-6">Micro</EnumVal>
+      <EnumVal ord="-3">Milli</EnumVal>
+      <EnumVal ord="-2">Centi</EnumVal>
+      <EnumVal ord="-1">Deci</EnumVal>
+      <EnumVal ord="0">zeroNoValue</EnumVal>
+      <EnumVal ord="1">Deca</EnumVal>
+      <EnumVal ord="2">Hecto</EnumVal>
+      <EnumVal ord="3">Kilo</EnumVal>
+      <EnumVal ord="6">Mega</EnumVal>
+      <EnumVal ord="9">Giga</EnumVal>
+      <EnumVal ord="12">Tera</EnumVal>
+      <EnumVal ord="15">Petra</EnumVal>
+      <EnumVal ord="18">Exa</EnumVal>
+      <EnumVal ord="21">Zetta</EnumVal>
+      <EnumVal ord="24">Yotta</EnumVal>
+    </EnumType>
+    <EnumType id="tempEnum">
+      <EnumVal ord="0">e1</EnumVal>
+      <EnumVal ord="1">e2</EnumVal>
+      <EnumVal ord="2">e3</EnumVal>
+      <EnumVal ord="3">e4</EnumVal>
+      <EnumVal ord="4">e5</EnumVal>
+    </EnumType>
+  </DataTypeTemplates>
+</SCL>
