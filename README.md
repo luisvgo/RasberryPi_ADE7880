@@ -28,9 +28,9 @@ The IEC61850 works in the same manner as the solar panel implementation. By mean
 ESP_MCU Folders & files structure:
 
 •	/src: 
-◦	main.c
-◦	main.h
-◦	/energy_data: //reading_energy() thread
+	◦	main.c
+	◦	main.h
+	◦	/energy_data: //reading_energy() thread
 ▪	energy_meter.c
 ▪	energy_meter.h
 ◦	/motor_data: 	//reading_motor() thread
