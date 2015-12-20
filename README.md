@@ -1,12 +1,9 @@
 # RasberryPi_ADE7880
 RasPi interfacing a ADE7880 energy meter and a M16C62P to control the energy produced by an electric motor
 
-
-Project to control a gasoline motor powered electric generator:
-
+# About this project
 It consisted in a system operated remotely from DEMVE laboratory with MicroSCADA like system by means of IEC61850 standard.
-
-A gasoline powered electric generator in Technobothnia Mechanical department that had no interface to get the data, just cables. From this, the operator had to be able to read motor status, read generated power, its related values as load current and generator voltages and quality, and change the status of the motor (ON/OFF) as well as to read, measure and evaluate status of all the different sensors. The system automatically send events of error conditions and motor status changes.
+A gasoline powered electric generator in Technobothnia Mechanical department of Vaasa University of Applied Sciences (Finland) that had no interface to get the data, just cables. From this, the operator had to be able to read motor status, read generated power, its related values as load current and generator voltages and quality, and change the status of the motor (ON/OFF) as well as to read, measure and evaluate status of all the different sensors. The system automatically send events of error conditions and motor status changes.
 
 Since the Vacon frequency converter had an RS485 interface where from one could get the readings and set values to it, formatted with Modbus protocol and I2C communications, this part was mostly a software task to implement Libmodbus library in a Raspberry Pi reading through a USB to RS485 cable. And to communicate with DEMVE lab, IEC61850 standard over ethernet, by means of Substation Configuration Language (SCL). To make the device compatible with the standard, IED Capability Description (ICD) was created using the RedWind IED Modeler splitting a single physical device in multiple logical devices, in this model the device was split into solar panel and the transformer side. Then each Vacon variable is mapped to corresponding logical nodes.
 
@@ -24,7 +21,11 @@ The Raspberry Pi acts as the master for SPI and server for EC61850. The implemen
 
 The IEC61850 works by means of the LibIEC61850 public library and the SCL descriptive file, a set of pointers to the functions to read and write to DEMVE are passed to a method that, when in the first run, takes them, and opens the required independent  threads to write or read the, acting as a server that retrieves the content of the container object of the information
 
-Open the Readme.doc file for more information
+Open the Documetation forder to find more information
 
+# Technical details
+Project built using eclipse under Ubuntu 64 bits and crosscompilation to build Raspberry Pi ARM binaries. Writen in C, the ADE7880 driver includes Doxigen notation to build its own documentation.
+The ADE7880 driver it is functional for common Energy readings and harmonics related measuremets. Though not complete yet, few steps are required to implement the  missing fuctionality.
+Additionally it uses the external libraries libIEC61850 and the bc2835 library written by Mike McCauley to control the SPI communications. This latest includes a wrapper middware layer to control the access to the SPI driver, allowing several devices with different configurations.
 
 Luis Alvarez
